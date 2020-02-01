@@ -1,0 +1,55 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --cpi-primary-color:#3080e79c;
+  --abt-overlay-color:#9e182a85;
+}
+
+
+.cpi-showcase{
+  display: block;
+  height: 30vh;
+  width: 100%;
+  position: relative;
+  background: url('Fel-Gallery/cpi.jpg') no-repeat center center/cover;
+  color:#fff;
+  z-index: -1;
+  border-bottom: #9e182a 3px solid; 
+}
+
+.cpi-showcase::before{
+  content: '';
+  position: absolute;
+  background:var(--abt-overlay-color) ;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.cpi-content{
+float: left;
+position: relative;
+  top: 0 ;
+  left: 5%;
+}
+
+.cpi-title{
+  /*position: relative;
+  top: 50%;
+  left: 50%;*/
+  margin-top: 10vh;
+  border-top:#ddd 5px solid ;
+  border-bottom:#ddd 5px solid ;
+  padding: 1rem 5rem;
+}
+
+.cpi-title > h1 {
+  font-size: 2rem;
+  color: #fff;
+  padding:8px 2rem ;
+}

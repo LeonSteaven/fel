@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+.prefooter-1{
+   background-color: whitesmoke;
+  height:30vh;
+  border-top: #9e182a 2px solid;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  font-size: 1.0rem;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+ 
+.footer-content{
+ padding: 0.7rem 1rem; 
+ /*align-items: center;
+ text-align: center;*/
+ margin-left: auto;
+ margin-right: auto;
+ width: 50%;
+
+}
+
+.footer-content > h3 {
+color:#640f1a;
+margin: 0.8rem 0;
+font-weight: bolder;
+border-bottom: rgb(189, 186, 186) 1px solid;
+text-align: left;
+
+}
+
+.footer-content > h3 > a {
+ color:#640f1a;
+ font-size: 1.2rem;
+}
+
+.footer-content > ul {
+ list-style: none;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+}
+
+.footer-content > ul > li > a {
+text-decoration: underline;
+color: #9e182a;
+padding: 1rem 0;
+}
+
+.footer-content > ul > li > a:hover{
+  text-decoration: none;
+  color: #333;
+}
+
+
+
+
+
+
+.prefooter-2{
+  background-color: #444;
+  color: #f3f3f3;
+  height: 50vh;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.contact-info{
+  display: grid;
+  grid-template-columns:repeat(2, 1fr) ;
+ 
+}
+
+.contact-info > div {
+  margin: 1rem 4.0rem;
+  padding: 8px 14px;
+}
+
+.contact-info > div > h3 {
+  padding: 10px 0;
+  border-bottom: darkgray 1px solid;
+  text-align: center;
+
+}
+
+.contact-info > div > ul{
+  list-style: none;
+}
+
+.contact-info > div > ul > li {
+  text-align: left;
+  margin: 8px 0;
+  padding: 0 1rem;
+}
+
+.contact-info > div > ul > li > a {
+  color: #fff;
+}
+
+.contact-info > div > ul > li > a:hover{
+  color: #ddd;
+}
+
+.contact-info > div > ul > li > svg {
+  padding: 0 12px;
+  margin:0 12px ;
+}
+footer{
+  text-align: center;
+  padding: 1.6rem 2rem;
+  margin:0;
+  background-color: #333;
+  color:#f3f3f3;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.logo{
+  padding: 2rem 1rem;
+}
+.pf-logo{
+  position: relative;
+  left: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+@media (max-width:560px){
+
+.prefooter-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap:15px;
+  height:90vh;
+
+}
+
+
+.footer-content{
+ padding: 0.7rem 1rem; 
+}
+
+.prefooter-2{
+  grid-gap:5px;
+  height:65vh;
+}
+
+.contact-info{
+  grid-template-columns: 1fr;
+}
+
+
+}
